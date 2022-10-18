@@ -1,0 +1,51 @@
+.container {
+    padding: 20px 20px;
+    display: grid;
+    width: 1000px;
+    height: 80vh;
+    gap: 50px;
+    background-color: blue;
+    margin: 100px auto;
+    grid-template-columns: repeat(3, 1fr);
+font-size: 100px;
+grid-template-areas: "item item item" "item2 item3 item4" "item2 item5 item5";
+}
+
+.item {
+ grid-area: item;
+    text-align: center;
+
+    background-color: aquamarine;
+}
+
+.item2 {
+    grid-area: item2;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.item3 {
+    grid-area: item3;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.item4 {
+    grid-area: item4;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.item5 {
+    grid-area: item5;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+@media screen and  {
+    .container{
+        grid-template-areas: "item item item" 
+        "item2 item3 item4" 
+        "item2 item5 item5";
+    }
+}
